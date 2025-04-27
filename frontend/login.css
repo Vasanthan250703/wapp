@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: url('nik-umFPf301OjQ-unsplash.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark overlay to make the form pop */
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.login-container {
+  background: #ffffff10;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  color: white;
+  transition: 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.login-container:hover {
+  transform: scale(1.02);
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #e0e0e0;
+  font-size: 15px;
+}
+
+.form-group input:focus {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px #4caf50;
+}
+
+.login-btn {
+  width: 60%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: block;        
+  margin: 20px auto 0;   
+}
+
+.login-btn:hover {
+  background-color: #43a047;
+}
+
+.error-message {
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: #81c784;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Bottom links */
+.bottom-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-admin {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.contact-admin a {
+  color: #90caf9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-admin a:hover {
+  text-decoration: underline;
+}
+
+.register-btn {
+  display: block;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #af4c56, #2e7d32);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease all;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}

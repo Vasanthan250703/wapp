@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WorkerDB Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">WorkerDB</div>
+    
+    <div class="user-controls">
+      <img src="profile.png" alt="Profile" class="user-icon">
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    
+  </nav>
+
+  <main class="dashboard-container">
+    <h1>Welcome to WorkerDB Dashboard</h1>
+    <div class="card-grid">
+      <div class="card" onclick="navigateTo('employee-management.html')">
+        <h2>Employee Management</h2>
+        <p>View, edit, and manage employee records.</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('attendance.html')">
+        <h2>Daily Attendance</h2>
+        <p>Mark presence and manage daily salaries.</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('loan-tracking.html')">
+        <h2>Loan Tracking</h2>
+        <p>Record and view employee loan history.</p>
+      </div>
+
+      <div class="card" onclick="navigateTo('user-management.html')">
+        <h2>Login System</h2>
+        <p>Manage admin and manager logins.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
